@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --green: #0b2c24;
+  --lgreen: #1c603f;
+  --gradient: linear-gradient(90deg, var(--green), var(var(--lgreen)));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  background-color: transparent;
+  color: white;
+}
+
+*::selection {
+  background: var(--green);
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--green);
+  z-index: 1000;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo img {
+  width: 10%;
+}
+
+header .navbar a {
+  font-size: 2rem;
+  margin-left: 2.5rem;
+  color: white;
+}
+
+header .navbar a:hover {
+  color: red;
+}
+
+#menu-bar {
+  font-size: 3rem;
+  color: white;
+}
